@@ -16,10 +16,15 @@ namespace PierresBakeryInc.Models
     {
       OrderItem = orderItem;
       _instances.Add(this);
+      Id = _instances.Count;
     }
     public static List<Order> GetAll()
     {
       return _instances;
+    }
+    public static Order Find(int searchId)
+    {
+      return _instances[searchId - 1];
     }
   }
 }
