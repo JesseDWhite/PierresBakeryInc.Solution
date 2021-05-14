@@ -12,5 +12,11 @@ namespace PierresBakeryInc.Tests
     {
       Order.ClearAll();
     }
+    [TestMethod]
+    public void OrderConstructor_CreatesInstanceOfOrder_Order()
+    {
+      Order newOrder = new Order("bread loaf");
+      Assert.AreEqual(typeof(Order), newOrder.GetType());
+    }
   }
 }
