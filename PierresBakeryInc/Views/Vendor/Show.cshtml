@@ -4,7 +4,7 @@
 @using PierresBakeryInc.Models;
 
 <h3>Here are all of the orders for @Model["vendor"].VendorName</h3>
-<h5>Vendor Notes: @Model["vendor"].Description</h5>
+<h5>Vendor Description: @Model["vendor"].Description</h5>
 
 <ol>
   @foreach (Order order in @Model["orders"])

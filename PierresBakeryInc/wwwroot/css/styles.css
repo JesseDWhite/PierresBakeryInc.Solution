@@ -10,6 +10,7 @@ div#footer {
 button {
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 50%;
 }
 h1 {
   text-align: center;
@@ -18,11 +19,12 @@ button#button-footer {
   width: 100%;
 }
 body{
-    margin-top: 20px;
-    color: white;
-    background-image: url(../img/background-photo.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/background-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #333;
+    margin: 30px;
+    color: white;
     text-align: center;
 }
 ol,li{
