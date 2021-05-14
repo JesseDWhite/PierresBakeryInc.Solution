@@ -14,7 +14,8 @@ namespace PierresBakeryInc.Models
     }
     public Order(string orderItem)
     {
-
+      OrderItem = orderItem;
+      _instances.Add(this);
     }
   }
 }
