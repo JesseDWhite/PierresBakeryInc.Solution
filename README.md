@@ -1,5 +1,5 @@
 # _Pierre's Bakery_ 🍞
-#### _This is our eigth week project for Epicodus. The project should cover C# classes, constructors, and namespaces._
+#### _This is our ninth week project for Epicodus. The project should cover C# objects within objects as well as RESTful conventions._
 #### By _Jesse White_
 ## Technologies Used
 * _.NET_ 🥅
