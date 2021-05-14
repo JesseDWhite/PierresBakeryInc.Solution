@@ -17,5 +17,9 @@ namespace PierresBakeryInc.Models
       OrderItem = orderItem;
       _instances.Add(this);
     }
+    public static List<Order> GetAll()
+    {
+
+    }
   }
 }
