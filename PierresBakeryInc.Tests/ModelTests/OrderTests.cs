@@ -23,7 +23,7 @@ namespace PierresBakeryInc.Tests
     {
       string order = "bread loaf";
       Order newOrder = new Order(order);
-      string result = newOrder.OrderOrder;
+      string result = newOrder.OrderItem;
       Assert.AreEqual(order, result);
     }
     [TestMethod]

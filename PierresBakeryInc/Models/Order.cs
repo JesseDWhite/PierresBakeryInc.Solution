@@ -19,7 +19,7 @@ namespace PierresBakeryInc.Models
     }
     public static List<Order> GetAll()
     {
-
+      return _instances;
     }
   }
 }
