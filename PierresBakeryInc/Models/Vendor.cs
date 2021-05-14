@@ -13,5 +13,10 @@ namespace PierresBakeryInc.Models
     {
       _instances.Clear();
     }
+    public Vendor(string vendorName)
+    {
+      VendorName = vendorName;
+      _instances.Add(this);
+    }
   }
 }
