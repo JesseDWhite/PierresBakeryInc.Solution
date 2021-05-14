@@ -15,8 +15,7 @@ namespace PierresBakeryInc.Models
     }
     public Vendor(string vendorName)
     {
-      VendorName = vendorName;
-      _instances.Add(this);
+
     }
   }
 }
