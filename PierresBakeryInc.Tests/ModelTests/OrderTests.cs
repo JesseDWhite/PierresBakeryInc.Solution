@@ -33,5 +33,24 @@ namespace PierresBakeryInc.Tests
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void GetAll_ReturnsOrders_OrderList()
+    {
+      string description01 = "bread loaf";
+      string description02 = "pastry";
+      Order newOrder1 = new Order(description01);
+      Order newOrder2 = new Order(description02);
+      List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
+    [TestMethod]
+    public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
+    {
+      string description = "bread loaf";
+      Order newOrder = new Order(description);
+      int result = newOrder.Id;
+      Assert.AreEqual(1, result);
+    }
   }
 }
