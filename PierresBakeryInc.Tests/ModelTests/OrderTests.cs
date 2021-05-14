@@ -18,5 +18,13 @@ namespace PierresBakeryInc.Tests
       Order newOrder = new Order("bread loaf");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string order = "bread loaf";
+      Order newOrder = new Order(order);
+      string result = newOrder.OrderItem;
+      Assert.AreEqual(order, result);
+    }
   }
 }

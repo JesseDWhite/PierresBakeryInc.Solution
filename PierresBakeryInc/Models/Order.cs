@@ -12,5 +12,9 @@ namespace PierresBakeryInc.Models
     {
       _instances.Clear();
     }
+    public Order(string orderItem)
+    {
+
+    }
   }
 }
