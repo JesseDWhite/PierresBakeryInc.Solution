@@ -17,6 +17,7 @@ namespace PierresBakeryInc.Models
     {
       VendorName = vendorName;
       _instances.Add(this);
+      Id = _instances.Count;
     }
   }
 }
